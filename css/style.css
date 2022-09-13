@@ -893,8 +893,8 @@ img{
 
 .icon-input{
     position: absolute;
-    left: 0;
-    bottom: 0;
+    top: calc(80% - 18px);
+    left: 12px;
 }
 
 .modal-register-comment{
