@@ -19,13 +19,16 @@
     --border-head-cl: #ECECEC;
     --border-card-cl: #EEEEEE;
     --border-client: #AFB1B8;
+    --border-input: rgba(33, 33, 33, 0.2);
     /* Animated */
     --cubic-bz: cubic-bezier(0.4, 0, 0.2, 1);
+    /* Fonts Style */
+    --main-font: 'Roboto', sans-serif;
 }
 
 body{
     /* font-family: 'Raleway', sans-serif; */
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font);
     font-size: 14px;
     line-height: 1.15;
 
@@ -796,6 +799,8 @@ img{
     top: 50%;
     left: 50%;
 
+    padding: 40px;
+
     width: 528px;
     height: 581px;
 
@@ -826,4 +831,61 @@ img{
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+}
+
+/* MODAL WINDOW FORM */
+
+.modal-form-title{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(23 / 20);
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    display: block;
+    margin-bottom: 12px;
+
+    color: var(--heading-color);
+}
+
+.modal-register-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-register-group{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.modal-input-group{
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.modal-input-desc{
+
+}
+
+.modal-register-input{
+    width: 448px;
+
+    padding: 11px 0px 11px 12px; 
+
+    border: 1px solid var(--border-input);
+    border-radius: 4px;
+}
+
+.icon-input{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
