@@ -41,13 +41,15 @@
           <li class="adress-item">
             <a class="adress-link decor-none" href="mailto:info@devstudio.com">
               <svg class="adress-envelope" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use></svg              >info@devstudio.com</a
+                <use href="./images/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
             >
           </li>
           <li class="adress-item">
             <a class="adress-link decor-none" href="tel:+380961111111"
               ><svg class="adress-smaerphone" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone"></use></svg              >+38 096 111 11 11</a
+                <use href="./images/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -605,19 +607,20 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-form">
         <button class="modal-btn" type="button" data-modal-close>
-          <svg class="modal-icon" width="30" height="30">
-            <use href="./images/icons.svg#close"></use>
+          <svg class="modal-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
 
         <!-- forma -->
-        <strong class="modal-form-title">Залиште свої дані, ми вам передзвонимо</strong>
+        <strong class="modal-form-title"
+          >Залиште свої дані, ми вам передзвонимо</strong
+        >
         <form class="modal-register-form">
-
           <div class="modal-register-group" role="group">
             <label class="modal-input-group">
               <span class="modal-input-desc">Ім'я</span>
-              <input class="modal-register-input" type="text" name="name"/>
+              <input class="modal-register-input" type="text" name="name" />
               <svg class="icon-input" width="18" height="18">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
@@ -628,6 +631,7 @@
               <input class="modal-register-input" type="tel" name="tel" />
               <svg class="icon-input" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
             </label>
 
             <label class="modal-input-group">
@@ -635,23 +639,34 @@
               <input class="modal-register-input" type="email" name="email" />
               <svg class="icon-input" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
+              </svg>
             </label>
 
             <label class="modal-input-group">
               <span class="modal-input-desc">Коментар</span>
-              <textarea class="modal-register-comment" name="comment" placeholder="Введіть текст"></textarea>
+              <textarea
+                class="modal-register-comment"
+                name="comment"
+                placeholder="Введіть текст"
+              ></textarea>
             </label>
           </div>
-          
+
           <label class="politic-group">
             <input class="politic" type="checkbox" name="politic" />
             <span class="politic-text">
-              Погоджуюся з розсилкою та приймаю <a href="" class="politic-link">Умови договору</a>
+              Погоджуюся з розсилкою та приймаю
+              <a
+                class="politic-link"
+                href="./"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Умови договору</a
+              >
             </span>
           </label>
-          
-          <button class="send-btn btn" type="submit">Відправити</button>
 
+          <button class="send-btn btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
