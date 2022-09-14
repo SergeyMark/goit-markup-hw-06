@@ -909,6 +909,8 @@ img{
     border-radius: 4px;
 
     cursor: pointer;
+
+    transition: border 250ms var(--cubic-bz);
 }
 
 .modal-register-input:focus,
@@ -923,6 +925,8 @@ img{
     left: 12px;
 
     fill: var(--heading-color);
+
+    transition: fill 250ms var(--cubic-bz);
 }
 
 .modal-register-input:focus + .icon-input{
@@ -946,18 +950,39 @@ img{
 
     border: 1px solid var(--border-input);
     border-radius: 4px;
+
+    transition: border 250ms var(--cubic-bz);
 }
+
+/* cheked */
 
 .politic-group{
     display: flex;
     align-items: center;
     gap: 9px;
 
+    position: relative;
+
     margin-bottom: 30px;
 }
 
-.politic{
-    background-color: var(--heading-color);
+.icon-check {
+    position: absolute;
+    top: calc(50% - 8px);
+    
+    display: block;
+    width: 16px;
+    height: 15px;
+    
+    background-image: url(../images/icon-not-check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.politic:checked + .icon-check {
+    background-image: url(../images/check.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .politic-text{
@@ -966,6 +991,8 @@ img{
     letter-spacing: 0.03em;
     
     color: var(--text-color);
+
+    margin-left: 25px;
 }
 
 .politic-link{
