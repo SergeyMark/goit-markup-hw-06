@@ -921,7 +921,7 @@ img{
 
 .icon-input{
     position: absolute;
-    top: calc(80% - 18px);
+    bottom: 11px;
     left: 12px;
 
     fill: var(--heading-color);
