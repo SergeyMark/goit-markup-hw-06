@@ -517,7 +517,12 @@ img{
 .footer-flex{
     display: flex;
     align-items: baseline;
-    gap: 70px;
+}
+
+.address-group{
+    flex-grow: 1;
+
+    margin-right: 70px;
 }
 
 .footer .logo{
@@ -554,6 +559,10 @@ img{
 
 /* FOOTER SOCIAL */
 
+.join-group{
+    margin-right: 93px;
+}
+
 .subscribe-title,
 .join-title {
     color: var(--white-color);
@@ -585,7 +594,7 @@ img{
 /* FOOTER FORM */
 
 .subscribe-group{
-    margin-left: auto;
+    /* margin-left: auto; */
 }
 
 .subscribe-form{
@@ -967,9 +976,6 @@ img{
 }
 
 .icon-check {
-    position: absolute;
-    top: calc(50% - 8px);
-    
     display: block;
     width: 16px;
     height: 15px;
@@ -991,8 +997,6 @@ img{
     letter-spacing: 0.03em;
     
     color: var(--text-color);
-
-    margin-left: 25px;
 }
 
 .politic-link{
